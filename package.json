@@ -11,6 +11,7 @@
     "reset:migrations": "supabase db reset",
     "apply:migrations": "supabase migration up",
     "deploy:migrations": "supabase db push",
+    "stop:migrations":"supabase stop",
     "status:migrations": "supabase migration list"
   },
   "devDependencies": {
