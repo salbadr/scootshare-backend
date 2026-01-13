@@ -1,0 +1,19 @@
+{
+  "name": "scootshare-backend",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "init:migrations": "supabase init",
+    "start:migrations": "supabase start",
+    "create:migration": "supabase migration new",
+    "reset:migrations": "supabase db reset",
+    "apply:migrations": "supabase migration up",
+    "deploy:migrations": "supabase db push",
+    "status:migrations": "supabase migration list"
+  },
+  "devDependencies": {
+    "supabase": "^2.72.6"
+  }
+}
