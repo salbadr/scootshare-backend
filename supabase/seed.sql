@@ -1,0 +1,22 @@
+-- Seed data for scooters table
+INSERT INTO public.scooters (name, price, type, description) VALUES
+  ('Urban Glide Pro', 55, 'Electric', 'Perfect for city commuting with a sleek design and long battery life. Ideal for daily urban travel.'),
+  ('Street Cruiser X', 42, 'Electric', 'Affordable and reliable electric scooter with solid build quality. Great for short to medium distances.'),
+  ('Velocity Racer', 60, 'Electric', 'High-performance scooter with top speeds up to 25mph. Built for speed enthusiasts.'),
+  ('EcoRide Compact', 35, 'Electric', 'Lightweight and foldable, perfect for students and commuters with limited storage space.'),
+  ('Mountain Beast', 58, 'Gas', 'Off-road capable with reinforced suspension and all-terrain tires. Powerful gas engine for adventure.'),
+  ('City Hopper', 20, 'Kick', 'Budget-friendly manual scooter with essential features. Classic and reliable transportation.'),
+  ('Thunder Bolt', 52, 'Electric', 'Powerful motor with quick acceleration. Features LED display and app connectivity.'),
+  ('Whisper Glide', 48, 'Electric', 'Ultra-quiet motor for peaceful rides. Smooth suspension for maximum comfort.'),
+  ('Nano Rider', 32, 'Electric', 'Compact design perfect for last-mile connectivity. Easily portable and lightweight.'),
+  ('Sport Elite', 60, 'Electric', 'Premium scooter with carbon fiber components. Top-tier performance and style.'),
+  ('Commuter Classic', 45, 'Gas', 'Reliable gas-powered workhorse for daily commuting. Proven durability and low maintenance.'),
+  ('Swift Runner', 50, 'Electric', 'Balanced performance with great range. Smart features including cruise control.'),
+  ('Urban Fox', 46, 'Electric', 'Stylish design meets functionality. Perfect for young professionals navigating the city.'),
+  ('Power Pro Max', 60, 'Electric', 'Flagship model with dual motors and extended battery. Premium in every way.'),
+  ('Green Wave', 22, 'Kick', 'Eco-conscious manual scooter with recycled materials. Sustainable zero-emission choice.'),
+  ('Metro Sprint', 51, 'Electric', 'Fast-charging capability for busy schedules. City-optimized with great maneuverability.'),
+  ('Campus Cruiser', 25, 'Kick', 'Student-friendly manual scooter with solid performance. Perfect for college campuses.'),
+  ('Executive Ride', 57, 'Gas', 'Professional gas scooter with premium materials. Designed for the discerning rider.'),
+  ('Weekend Warrior', 54, 'Electric', 'Versatile for both commute and leisure. Comfortable for longer rides.'),
+  ('Pocket Rocket', 38, 'Electric', 'Small but mighty. Surprising power in a compact package.');

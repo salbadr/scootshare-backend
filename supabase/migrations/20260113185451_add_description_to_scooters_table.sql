@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS scooters
+ADD IF NOT EXISTS description TEXT;
