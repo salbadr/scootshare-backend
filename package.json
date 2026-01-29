@@ -10,9 +10,11 @@
     "create:migration": "supabase migration new",
     "reset:migrations": "supabase db reset",
     "apply:migrations": "supabase migration up",
-    "deploy:migrations": "supabase db push",
+    "deploy": "supabase db push",
     "stop":"supabase stop",
-    "status": "supabase status"
+    "status": "supabase status",
+    "login": "supabase login --token",
+    "link": "supabase link --project-ref"
   },
   "devDependencies": {
     "supabase": "^2.72.6"
