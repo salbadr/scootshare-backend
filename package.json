@@ -10,7 +10,6 @@
     "create:migration": "supabase migration new",
     "reset:migrations": "supabase db reset",
     "apply:migrations": "supabase migration up",
-    "remove:migration": "supabase migration down",
     "deploy:migrations": "supabase db push",
     "stop":"supabase stop",
     "status": "supabase status"
