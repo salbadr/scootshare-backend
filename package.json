@@ -12,8 +12,7 @@
     "apply:migrations": "supabase migration up",
     "deploy:migrations": "supabase db push",
     "stop":"supabase stop",
-    "status": "supabase status",
-    "link": "supabase link --project-ref"
+    "status": "supabase status"
   },
   "devDependencies": {
     "supabase": "^2.72.6"
