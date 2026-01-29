@@ -5,14 +5,15 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "init:migrations": "supabase init",
-    "start:migrations": "supabase start",
+    "init": "supabase init",
+    "start": "supabase start",
     "create:migration": "supabase migration new",
     "reset:migrations": "supabase db reset",
     "apply:migrations": "supabase migration up",
+    "remove:migration": "supabase migration down",
     "deploy:migrations": "supabase db push",
-    "stop:migrations":"supabase stop",
-    "status:migrations": "supabase migration list"
+    "stop":"supabase stop",
+    "status": "supabase status"
   },
   "devDependencies": {
     "supabase": "^2.72.6"
