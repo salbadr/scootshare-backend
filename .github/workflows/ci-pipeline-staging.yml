@@ -1,16 +1,16 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: ScootShare Backend CI Test
+name: ScootShare Backend CI for Staging
 run-name: Running build for  ${{ github.sha}}
 on:
-  pull_request:
+  push:
     branches: [ "develop" ]
 
 
 jobs:
   build:
-    name: Continuous Integration of main pipeline
+    name: Continuous Integration of staging pipeline
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -25,11 +25,11 @@ jobs:
     - name: Install dependencies
       run: npm ci    
 
-    - name: Start Supabase
-      run: npm run start
+    - name: Login to Supabase
+      run: npm run login ${{ secrets.SUPABASE_ACCESS_TOKEN }}
 
-    - name: Test migrations
-      run: npm run apply:migrations
+    - name: Link to Supabase project
+      run: npm run link  ${{ secrets.SUPABASE_STAGING_PROJECT_REF }}
 
-    - name: Stop Supabase
-      run: npm run stop
+    - name: Deploy migrations
+      run: npm run deploy
