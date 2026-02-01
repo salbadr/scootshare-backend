@@ -12,6 +12,8 @@ jobs:
   build:
     name: Continuous Integration of staging pipeline
     runs-on: ubuntu-latest
+    environment: staging
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -29,7 +31,7 @@ jobs:
       run: npm run login ${{ secrets.SUPABASE_ACCESS_TOKEN }}
 
     - name: Link to Supabase project
-      run: npm run link  ${{ secrets.SUPABASE_STAGING_PROJECT_REF }}
+      run: npm run link  ${{ secrets.SUPABASE_PROJECT_REF }}
 
     - name: Deploy migrations
       run: npm run deploy
