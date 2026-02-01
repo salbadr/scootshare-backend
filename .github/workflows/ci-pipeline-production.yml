@@ -12,6 +12,8 @@ jobs:
   build:
     name: Continuous Integration of main pipeline
     runs-on: ubuntu-latest
+    environment: production
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
