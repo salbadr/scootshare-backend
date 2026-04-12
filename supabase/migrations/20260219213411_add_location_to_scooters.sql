@@ -1,3 +1,3 @@
 -- Up
 ALTER TABLE IF EXISTS scooters
-ADD IF NOT EXISTS location TEXT;
+ADD IF NOT EXISTS location TEXT NOT NULL;
