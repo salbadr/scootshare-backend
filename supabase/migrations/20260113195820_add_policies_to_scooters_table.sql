@@ -10,3 +10,8 @@ create policy "public can add scooters"
 on public.scooters
 for insert to anon
 with check (true);
+
+create policy "public can delete scooters"
+on public.scooters
+for delete to anon
+using (true)
